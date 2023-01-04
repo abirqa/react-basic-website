@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes, NavLink } from "react-router-dom";
+import Logo from "./Logo";
 import {
   MDBNavbar,
   MDBNavbarNav,
@@ -9,6 +10,7 @@ import {
   MDBContainer,
   MDBIcon,
   MDBCollapse,
+  MDBNavbarBrand,
   MDBBtn,
 } from "mdb-react-ui-kit";
 
@@ -17,6 +19,9 @@ const Header = () => {
   return (
     <MDBNavbar className="main-navbar" expand="lg" light bgColor="white">
       <MDBContainer fluid>
+        <MDBNavbarBrand href="#">
+          <Logo />
+        </MDBNavbarBrand>
         <MDBNavbarToggler
           onClick={() => setShowBasic(!showBasic)}
           aria-controls="navbarExample01"
@@ -25,24 +30,36 @@ const Header = () => {
         >
           <MDBIcon fas icon="bars" />
         </MDBNavbarToggler>
-        <MDBCollapse navbar show={showBasic}>
-          <MDBNavbarNav right className="mb-2 mb-lg-0">
+        <MDBCollapse navbar show={showBasic} className="mobile-ul-nav">
+          <MDBNavbarNav right className="mb-2 mb-lg-0 navul">
             <MDBNavbarItem active>
-              <MDBNavbarLink aria-current="page" href={"/"}>
+              <MDBNavbarLink
+                aria-current="page"
+                href={"/"}
+                className="menu-link"
+              >
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href={"/about"}>About Us</MDBNavbarLink>
+              <MDBNavbarLink href={"/about"} className="menu-link">
+                About Us
+              </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href={"/services"}>Services</MDBNavbarLink>
+              <MDBNavbarLink href={"/services"} className="menu-link">
+                Services
+              </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href={"/gallery"}>Gallery</MDBNavbarLink>
+              <MDBNavbarLink href={"/gallery"} className="menu-link">
+                Gallery
+              </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href={"/contact"}>Contact Us</MDBNavbarLink>
+              <MDBNavbarLink href={"/contact"} className="menu-link">
+                Contact Us
+              </MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
 .container {
   background-color: #fff;
   width: 100vw;
@@ -15,4 +17,63 @@
 
 nav.navbar-light.navbar.navbar-expand-lg.bg-white.main-navbar {
   padding: 30px;
+}
+
+ul.navbar-nav.w-100.ms-auto.mb-2.mb-lg-0.navul {
+  width: 500px !important;
+}
+
+ul:hover li:not(:hover) a {
+  opacity: 0.2;
+}
+
+li.nav-item {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+a.nav-link.menu-link {
+  color: blueviolet !important;
+  text-transform: uppercase;
+}
+
+h1.mb-3.slider-main-text {
+  font-size: 50px;
+}
+
+h4.mb-3.slider-paragraph {
+  font-size: 18px;
+}
+
+button.ripple.ripple-surface.btn.btn-primary.btn-lg.active.me-2.slider-main-button {
+  width: 300px;
+  margin-top: 2rem;
+}
+
+small.abt-smalltext.text-uppercase {
+  color: #9b5de5;
+  font-weight: 500;
+}
+
+span.abt-heading-span {
+  color: #9b5de5;
+  font-family: "Poppins", sans-serif;
+}
+
+p.text-secondary.abt-para {
+  color: #000 !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+a.btn.px-4.py-3.mt-4.text-white.d-flex.align-items-center.justify-content-between.abt-btn {
+  background: #9b5de5;
+  width: 180px;
+  text-align: center !important;
+  font-size: 16px;
+}
+
+span.abt-main-heading-span {
+  font-family: "Poppins", sans-serif;
+  margin-right: 0.75rem;
 }

@@ -1,0 +1,9 @@
+@media only screen and (min-width: 350px) and (max-width: 768px) {
+  h1.mb-3.slider-main-text {
+    font-size: 30px;
+  }
+
+  .collapse.show.navbar-collapse.mobile-ul-nav {
+    margin-top: 1.5rem;
+  }
+}

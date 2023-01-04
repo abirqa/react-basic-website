@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Slider from "./components/Slider";
+import "./Responsive.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
