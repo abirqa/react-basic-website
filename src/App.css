@@ -3,7 +3,7 @@
 .container {
   background-color: #fff;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .navbar {
@@ -53,6 +53,7 @@ button.ripple.ripple-surface.btn.btn-primary.btn-lg.active.me-2.slider-main-butt
 small.abt-smalltext.text-uppercase {
   color: #9b5de5;
   font-weight: 500;
+  letter-spacing: 0.25rem;
 }
 
 span.abt-heading-span {
@@ -76,4 +77,49 @@ a.btn.px-4.py-3.mt-4.text-white.d-flex.align-items-center.justify-content-betwee
 span.abt-main-heading-span {
   font-family: "Poppins", sans-serif;
   margin-right: 0.75rem;
+}
+
+img.rounded.abt-img {
+  width: 100%;
+}
+
+img.rounded.abt-img-2 {
+  width: 100%;
+}
+
+.services-main-container {
+  margin-top: 8rem;
+  background-color: #1a1a1a;
+  padding: 6rem;
+}
+
+.container.services-heading {
+  margin-bottom: 3rem;
+}
+
+.service-btn {
+  background-color: #9b5de5;
+}
+
+.service-btn:hover {
+  background-color: black;
+}
+
+h5.card-title.service-box-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+p.card-text.service-box-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.container-fluid.services-heading {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.services-main-heading {
+  color: #fff;
 }

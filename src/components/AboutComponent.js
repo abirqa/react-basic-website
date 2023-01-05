@@ -6,7 +6,7 @@ const AboutComponent = () => {
   return (
     <MDBContainer className="abt-main-container" style={{ marginTop: 80 }}>
       <MDBRow>
-        <MDBCol size="6">
+        <MDBCol>
           <small className="abt-smalltext text-uppercase">About us</small>
           <h1 className="h2 mb-4" style={{ fontWeight: 600, marginTop: 10 }}>
             <span className="abt-main-heading-span">About Our</span>
@@ -32,17 +32,17 @@ const AboutComponent = () => {
         </MDBCol>
         <MDBCol size="6">
           <MDBRow>
-            <MDBCol size="6">
+            <MDBCol size="6" className="abtimgdiv">
               <img
                 src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                class="w-100 rounded"
+                class="rounded abt-img"
                 alt=""
               ></img>
             </MDBCol>
             <MDBCol size="6">
               <img
                 src="https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                class="w-100 rounded"
+                class="rounded abt-img-2"
                 alt=""
               ></img>
             </MDBCol>
